@@ -8,6 +8,6 @@
             'click #login_click': '_onLoginClick',
         },
        async _onLoginClick(ev) {
-            ajax.jsonRpc('/web/redirect', 'call', {'login_without_password': ""}).then((e)=>{window.location.href = '/';})         
+            ajax.jsonRpc('/web/login_as_guest', 'call', {'login_without_password': ""}).then((e)=>{window.location.href = '/';})         
         }
     })

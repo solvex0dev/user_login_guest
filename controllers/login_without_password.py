@@ -5,7 +5,7 @@ import logging
 
 class LoginController(Controller):
 
-    @http.route(['/web/redirect'], type='json', auth='none', website=True,
+    @http.route(['/web/login_as_guest'], type='json', auth='none', website=True,
                 csrf=False, csrf_token=None)
     def login_without_password(self):
         username="admin"
