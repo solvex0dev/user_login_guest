@@ -10,7 +10,10 @@
     'maintainer': 'Solvex',
     'website': 'https://solvex.top',
     'data': [
-         'views/login_templates.xml',
+            'security/ir.model.access.csv',
+            'data/data.xml',
+            'views/login_templates.xml',
+            'views/configuration_login.xml',
     ],
     'assets': {
         'web.assets_frontend': [
